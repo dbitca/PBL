@@ -10,7 +10,7 @@
 .sub-main {
   display: flex;
   justify-content: center;
-  height: 600px;
+  height: ayto;
   width: 35%;
   box-shadow: 11px 12px 13px 12px rgb(22, 22, 22);
   padding-top: 30px;
@@ -114,4 +114,10 @@ padding-top: 10px;
 
  a{
      color: #337885;
+ }
+
+
+ .login-urls{
+  margin: 0 10px;
+
  }

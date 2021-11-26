@@ -68,14 +68,10 @@ const Carousel = ({itms}) => {
             </div>
             {
                 items.map((e, i)=>{
-                    console.log("i",i)
-                    console.log("index:", index);
-                    console.log("size", items.length);
                      if(i >= index && i <= index+2){
-                        console.log({...e})
-
                         return <Card key={i} {...e} />
                     }
+                    return null;
                 })
             }
             <div className="next-card" onClick={nextAction}>

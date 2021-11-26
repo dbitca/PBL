@@ -1,0 +1,29 @@
+.doc-block {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 0 125px;
+}
+.doc-key {
+  display: flex;
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.doc-value {
+  display: flex;
+  flex: 1;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.document-data {
+  margin-top: 60px;
+}
+
+.document-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: darkgrey;
+}
