@@ -16,27 +16,45 @@ const Menu = ({ menu }) => {
           {menu.map((e) => {
             return (
               <li key={e.url}>
-                <Link className="menu-url" to={e.url}>
-                  {e.name}
-                </Link>
+                {e.subitems ? (
+                  <>
+                    <a className="menu-url">{e.name}</a>
+                    <ul className="drop-down-items">
+                      {e.subitems.map((item) => {
+                        return (
+                          <li key={e.url + item.url}>
+                            <Link className="menu-url" to={item.url}>
+                              {item.name}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </>
+                ) : (
+                  <Link className="menu-url" to={e.url}>
+                    {e.name}
+                  </Link>
+                )}
               </li>
             );
           })}
           <li>
-            {" "}
-            <Notifications
-              data={[]}
-              header={{
-                title: "Notifications",
-                option: {
-                  text: "View All",
-                  onClick: () => console.log("Clicked"),
-                },
-              }}
-              markAsRead={(data) => {
-                console.log(data);
-              }}
-            />
+            <a>
+              <Notifications
+                data={[]}
+                header={{
+                  title: "Notifications",
+                  option: {
+                    text: "View All",
+                    onClick: () => console.log("Clicked"),
+                  },
+                }}
+                markAsRead={(data) => {
+                  console.log(data);
+                }}
+              />
+            </a>
           </li>
         </ul>
       </nav>

@@ -8,6 +8,28 @@ const menu = [
     url: "/categories",
     name: "Categories",
     type: "text",
+    subitems: [
+      {
+        url: "/personal",
+        name: "Personal",
+        type: "text",
+      },
+      {
+        url: "/health",
+        name: "Health",
+        type: "text",
+      },
+      {
+        url: "/vehicles",
+        name: "Vehicles",
+        type: "text",
+      },
+      {
+        url: "/cadaster",
+        name: "Cadaster",
+        type: "text",
+      },
+    ],
   },
   {
     url: "/about",

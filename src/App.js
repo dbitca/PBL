@@ -7,7 +7,9 @@ import Register from "./pages/Register";
 import NewCard from "./pages/NewCard";
 import ForgotPass from "./pages/ForgotPassword";
 import Home from "./pages/Home";
+import Categories from "./pages/Categories";
 import Document from "./pages/Document";
+import AboutUs from "./pages/AboutUs";
 const App = () => {
   const authCtx = useContext(AuthContext);
   console.log(authCtx);
@@ -55,6 +57,10 @@ const App = () => {
           }
         />
         <Route path="/newCard" element={<NewCard />} />
+        <Route path="/personal" element={<Categories />} />
+        <Route path="/health" element={<Categories />} />
+        <Route path="/vehicles" element={<Categories />} />
+        <Route path="/cadaster" element={<Categories />} />
         <Route
           path="/register"
           element={
@@ -65,6 +71,7 @@ const App = () => {
             )
           }
         />
+        <Route path="/about" element={<AboutUs />} />
         <Route
           path="/forgot-password"
           element={
