@@ -12,7 +12,7 @@ const Carousel = ({ itms }) => {
   const items = [
     {
       name: "Covid Vaccine",
-      description: "",
+      description: "See more",
       type: "health",
     },
   ];
@@ -37,7 +37,7 @@ const Carousel = ({ itms }) => {
         }
         return null;
       })}
-      <Card isNewCard={true} name={"Add new card"} description="test" />
+      <Card isNewCard={true} name={"New Document"} description="Send a request" />
       <div className="next-card" onClick={nextAction}>
         <img src={Next} alt="next" />
       </div>

@@ -41,13 +41,13 @@ const NewCard = () => {
           <TextField id="standard-basic" label="Idnp" variant="standard" />
         </div>
         <div>
-          <TextField id="standard-basic" label="day" variant="standard" />
+          <TextField id="standard-basic" label="day of birth" variant="standard" />
         </div>
         <div>
-          <TextField id="standard-basic" label="month" variant="standard" />
+          <TextField id="standard-basic" label="month of birth" variant="standard" />
         </div>
         <div>
-          <TextField id="standard-basic" label="year" variant="standard" />
+          <TextField id="standard-basic" label="year of birth" variant="standard" />
         </div>
         <div>
           <InputLabel id="demo-multiple-name-label">Categories</InputLabel>

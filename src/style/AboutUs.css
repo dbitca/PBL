@@ -1,0 +1,36 @@
+
+.aboutus{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 40px;
+  
+}
+.welcomeedoc{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.fulltext{
+    height: 85%;
+    width: 70%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+     text-align: center;
+     
+     margin-left:250px;
+    width: 50em;  
+    
+}
+
