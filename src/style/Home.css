@@ -1,0 +1,14 @@
+.welcome {
+    margin-top: 100px;
+    text-decoration: underline;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 100px;
+    color: #337885;
+    
+
+}
+.rectangle {
+    height: 100px;
+    width: 50px;
+    background-color: #555;
+  }
