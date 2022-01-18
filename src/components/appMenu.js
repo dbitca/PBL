@@ -10,22 +10,22 @@ const menu = [
     type: "text",
     subitems: [
       {
-        url: "/personal",
+        url: "/categories/personal",
         name: "Personal",
         type: "text",
       },
       {
-        url: "/health",
+        url: "/categories/health",
         name: "Health",
         type: "text",
       },
       {
-        url: "/vehicles",
+        url: "/categories/vehicles",
         name: "Vehicles",
         type: "text",
       },
       {
-        url: "/cadaster",
+        url: "/categories/cadaster",
         name: "Cadaster",
         type: "text",
       },

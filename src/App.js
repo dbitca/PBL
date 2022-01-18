@@ -46,6 +46,7 @@ const App = () => {
             )
           }
         />
+
         <Route
           path="/login"
           element={
@@ -57,10 +58,7 @@ const App = () => {
           }
         />
         <Route path="/newCard" element={<NewCard />} />
-        <Route path="/personal" element={<Categories />} />
-        <Route path="/health" element={<Categories />} />
-        <Route path="/vehicles" element={<Categories />} />
-        <Route path="/cadaster" element={<Categories />} />
+        <Route path="/categories/:id" element={<Categories />} />
         <Route
           path="/register"
           element={
