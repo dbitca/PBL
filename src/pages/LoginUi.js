@@ -9,6 +9,30 @@ const LoginUi = ()  =>{
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const authCtx = useContext(AuthContext);
+
+  const  checklogin = async () =>{
+    const postData = {
+      Email: name,
+      Password: password,
+    };
+      const res = await fetch(`http://localhost:5000/api/Login`, {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(postData),
+      });
+
+      if (!res.ok) {
+        const message = `An error has occured: ${res.status} - ${res.statusText}`;
+        console.log(message)
+        throw new Error(message);
+      }
+
+      const data = await res.json();
+      console.log(data);
+     
+    }
   return (
     <Connect 
       actionUrl="/forgot-password"
@@ -37,6 +61,7 @@ const LoginUi = ()  =>{
         title="Log In"
         onClick={()=>{
         console.log(name);
+        // checklogin();
         console.log(password);
         authCtx.updateAuth(true);
         authCtx.updateUser(name);
