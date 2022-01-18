@@ -41,13 +41,25 @@ const NewCard = () => {
           <TextField id="standard-basic" label="Idnp" variant="standard" />
         </div>
         <div>
-          <TextField id="standard-basic" label="day of birth" variant="standard" />
+          <TextField
+            id="standard-basic"
+            label="day of birth"
+            variant="standard"
+          />
         </div>
         <div>
-          <TextField id="standard-basic" label="month of birth" variant="standard" />
+          <TextField
+            id="standard-basic"
+            label="month of birth"
+            variant="standard"
+          />
         </div>
         <div>
-          <TextField id="standard-basic" label="year of birth" variant="standard" />
+          <TextField
+            id="standard-basic"
+            label="year of birth"
+            variant="standard"
+          />
         </div>
         <div>
           <InputLabel id="demo-multiple-name-label">Categories</InputLabel>
@@ -55,7 +67,9 @@ const NewCard = () => {
             labelId="demo-multiple-name-label"
             id="demo-multiple-name"
             value={value}
-            onChange={setValue}
+            onChange={(e) => {
+              setValue(e.target.value);
+            }}
             input={<OutlinedInput label="Categories" />}
             // MenuProps={MenuProps}
           >
@@ -72,7 +86,9 @@ const NewCard = () => {
             labelId="demo-multiple-name-label"
             id="demo-multiple-name"
             value={doc}
-            onChange={setDoc}
+            onChange={(e) => {
+              setDoc(e.target.value);
+            }}
             input={<OutlinedInput label="Documents" />}
           >
             {documentNames &&
